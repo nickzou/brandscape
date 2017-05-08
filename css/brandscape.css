@@ -1,0 +1,339 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+textarea:focus,
+input:focus {
+  outline: none; }
+
+a {
+  color: #EB6A33;
+  text-decoration: none; }
+
+header, header .logo, header .right, nav, .page-template-home .container section.block.first .content, .page-template-home .container section.block.first .content .body, .page-template-home .container section.item .content, .page-template-home .container section.item .content .project-logo, .page-template-home .container section.item .content a, .page-template-home .container section.item .content a > div {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+
+header {
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #E0DEDF;
+  transition: 0.2s;
+  padding: 10px 0;
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+  z-index: 100; }
+  header.stickied {
+    padding: 0; }
+    header.stickied .logo img {
+      margin: 0 20px 0 0;
+      width: 382px; }
+    header.stickied .logo h1 {
+      font-size: 15px;
+      letter-spacing: 2px; }
+  header .logo {
+    justify-content: center;
+    align-items: center; }
+    header .logo img {
+      transition: 0.2s;
+      margin: 11px 35px 0 0; }
+    header .logo h1 {
+      font-size: 25px;
+      letter-spacing: 5.5px;
+      margin: 0;
+      transition: 0.2s;
+      color: #444; }
+  header .right {
+    justify-content: center; }
+    header .right i {
+      font-size: 25px;
+      color: #EB6A33; }
+  header .left,
+  header .right {
+    width: 90px; }
+
+nav {
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: -25%;
+  width: 25%;
+  padding: 20px;
+  background-color: black;
+  opacity: 0;
+  z-index: 105;
+  transition: 0.2s; }
+  nav.open {
+    right: 0;
+    opacity: 1; }
+  nav .menu .menu-item a {
+    font-size: 20px;
+    letter-spacing: 4px;
+    line-height: 40px;
+    transition: 0.2s; }
+    nav .menu .menu-item a:hover {
+      color: white; }
+  nav .menu-close {
+    width: 30px;
+    margin: 25px 15px 0 0; }
+    nav .menu-close a svg polygon {
+      fill: #EB6A33;
+      transition: 0.2s; }
+    nav .menu-close a:hover svg polygon {
+      fill: white; }
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; }
+
+.page-template-home .container section {
+  position: relative;
+  width: 100%;
+  border-bottom: 4px solid white; }
+  .page-template-home .container section.hero img {
+    width: 100%;
+    height: auto; }
+  .page-template-home .container section.block.first {
+    border-bottom: 4px solid white; }
+    .page-template-home .container section.block.first .image img {
+      width: 100%; }
+    .page-template-home .container section.block.first .content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      flex-direction: column;
+      align-items: center;
+      width: calc(100% - 26%);
+      padding: 3% 13%; }
+      .page-template-home .container section.block.first .content h1 {
+        color: #EB6A33;
+        font-size: 84px;
+        letter-spacing: -0.5px;
+        line-height: 120px; }
+      .page-template-home .container section.block.first .content .body {
+        width: 100%;
+        justify-content: space-between; }
+        .page-template-home .container section.block.first .content .body > div p {
+          color: white; }
+        .page-template-home .container section.block.first .content .body .left {
+          text-align: left; }
+          .page-template-home .container section.block.first .content .body .left p {
+            font-size: 30px;
+            line-height: 60px; }
+            .page-template-home .container section.block.first .content .body .left p:last-child {
+              color: #EB6A33; }
+        .page-template-home .container section.block.first .content .body .right {
+          text-align: right; }
+          .page-template-home .container section.block.first .content .body .right p {
+            font-size: 20px;
+            line-height: 50px; }
+  .page-template-home .container section.block.second .banner {
+    position: relative;
+    background-color: #E0DEDF;
+    height: 115px;
+    z-index: 20; }
+    .page-template-home .container section.block.second .banner img {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -65%;
+      height: 142px;
+      width: 141px; }
+  .page-template-home .container section.block.second .content {
+    position: relative; }
+    .page-template-home .container section.block.second .content .image img {
+      width: 100%; }
+    .page-template-home .container section.block.second .content .message {
+      position: absolute;
+      top: 0;
+      width: calc(100% - 26%);
+      padding: 90px 13% 100px 13%;
+      text-align: center; }
+      .page-template-home .container section.block.second .content .message h1 {
+        color: #EB6A33;
+        font-size: 45px;
+        text-transform: uppercase;
+        letter-spacing: 20px;
+        line-height: 120px;
+        margin-bottom: 24px; }
+      .page-template-home .container section.block.second .content .message .body p {
+        color: #151515;
+        font-size: 24px;
+        line-height: 55px; }
+  .page-template-home .container section.item:nth-last-child(2) .content .project-logo img {
+    width: 46%; }
+  .page-template-home .container section.item:last-child .content .project-logo img {
+    width: 40%; }
+  .page-template-home .container section.item .image img {
+    width: 100%; }
+  .page-template-home .container section.item .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    flex-direction: column;
+    width: 100%; }
+    .page-template-home .container section.item .content .project-logo {
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 5%; }
+    .page-template-home .container section.item .content a {
+      justify-content: center;
+      background-color: rgba(255, 255, 255, 0.65);
+      padding: 10px 0; }
+      .page-template-home .container section.item .content a > div {
+        align-items: center; }
+      .page-template-home .container section.item .content a .company-logo {
+        justify-content: flex-end;
+        width: 33.333333333333%; }
+        .page-template-home .container section.item .content a .company-logo img {
+          padding-right: 10px; }
+      .page-template-home .container section.item .content a .info {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 66.666666666666%;
+        border-left: 3px solid #EB6A33;
+        padding: 10px; }
+        .page-template-home .container section.item .content a .info h2 {
+          color: #151515;
+          font-size: 28px;
+          text-transform: capitalize;
+          font-weight: bold;
+          padding: 10px 0 20px 0; }
+        .page-template-home .container section.item .content a .info .button {
+          background: white;
+          font-size: 18px;
+          text-transform: uppercase;
+          padding: 5px 10px;
+          transition: 0.2s; }
+          .page-template-home .container section.item .content a .info .button:hover {
+            color: #151515; }

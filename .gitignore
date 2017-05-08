@@ -22,3 +22,8 @@ bower_components/
 *.css.map
 build/
 dist/
+gulpfile.js
+.gitignore
+js/theme.js
+package.json
+style.css

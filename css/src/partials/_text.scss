@@ -1,0 +1,10 @@
+@mixin text-style ($family, $color, $size, $weight:normal, $style:normal, $transform:none, $height:normal, $spacing:normal) {
+	font-family: $family;
+	color: $color;
+	font-size: $size;
+	font-weight: $weight;
+	font-style: $style;
+	text-transform: $transform;
+	line-height: $height;
+	letter-spacing: $spacing;
+}
