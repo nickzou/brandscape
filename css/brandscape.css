@@ -130,7 +130,7 @@ a {
   color: #EB6A33;
   text-decoration: none; }
 
-header, header .logo, header .right, nav, .page-template-home .container section.block.first .content, .page-template-home .container section.block.first .content .body, .page-template-home .container section.item .content, .page-template-home .container section.item .content .project-logo, .page-template-home .container section.item .content a, .page-template-home .container section.item .content a > div {
+header, header .logo, header .right, nav, footer .footer, footer .footer > div, footer .footer .social .icons, footer .footer .social .icons a, .page-template-home .container section.block.first .content, .page-template-home .container section.block.first .content .body, .page-template-home .container section.item .content, .page-template-home .container section.item .content .project-logo, .page-template-home .container section.item .content a, .page-template-home .container section.item .content a > div, .page-template-home .container section.contact-form .form .form-container ul {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -209,8 +209,42 @@ nav {
     nav .menu-close a:hover svg polygon {
       fill: white; }
 
+footer {
+  background-color: #252525; }
+  footer .footer {
+    width: 1425px;
+    margin: 0 auto;
+    padding: 25px 7% 40px 7%; }
+    footer .footer > div {
+      flex-basis: 50%; }
+      footer .footer > div p {
+        color: #ccc;
+        font-size: 19px;
+        line-height: 28px;
+        letter-spacing: 1.4px; }
+    footer .footer > div {
+      flex-direction: column; }
+    footer .footer .contact {
+      justify-content: flex-start; }
+      footer .footer .contact .orange {
+        color: #EB6A33; }
+      footer .footer .contact .copyright {
+        padding-top: 28px; }
+    footer .footer .social {
+      justify-content: space-between;
+      align-items: flex-end; }
+      footer .footer .social .icons a {
+        justify-content: center;
+        align-items: center;
+        background-color: #E0DEDF;
+        margin-left: 10px;
+        height: 45px;
+        width: 45px; }
+        footer .footer .social .icons a i {
+          font-size: 36px; }
+
 .container {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%; }
@@ -337,3 +371,58 @@ nav {
           transition: 0.2s; }
           .page-template-home .container section.item .content a .info .button:hover {
             color: #151515; }
+  .page-template-home .container section.contact-form {
+    background-color: #E0DEDF;
+    border-bottom: 0; }
+    .page-template-home .container section.contact-form h1 {
+      color: #444;
+      text-align: center;
+      font-size: 45px;
+      line-height: 80px;
+      text-transform: uppercase;
+      letter-spacing: 20px;
+      margin-bottom: 10px; }
+      .page-template-home .container section.contact-form h1 .orange {
+        color: #EB6A33; }
+    .page-template-home .container section.contact-form .form {
+      width: 1425px;
+      margin: 0 auto;
+      padding: 20px 0 50px 0; }
+      .page-template-home .container section.contact-form .form .form-container {
+        background-color: white;
+        padding: 26px 4%; }
+        .page-template-home .container section.contact-form .form .form-container ul {
+          flex-wrap: wrap; }
+          .page-template-home .container section.contact-form .form .form-container ul > li {
+            padding: 20px 8px;
+            margin: 0; }
+            .page-template-home .container section.contact-form .form .form-container ul > li .ginput_container {
+              width: 100%;
+              margin: 0; }
+          .page-template-home .container section.contact-form .form .form-container ul .half {
+            flex-basis: calc(50% - 16px); }
+            .page-template-home .container section.contact-form .form .form-container ul .half input[type="text"] {
+              font-family: 'Helvetica Neue LT W01_33 Th Ex';
+              width: 100%;
+              border: 1px solid #E0DEDF;
+              padding: 16px; }
+          .page-template-home .container section.contact-form .form .form-container ul .full {
+            flex-basis: calc(100% - 32px); }
+            .page-template-home .container section.contact-form .form .form-container ul .full textarea {
+              font-family: 'Helvetica Neue LT W01_33 Th Ex';
+              width: 100%;
+              border: 1px solid #E0DEDF;
+              padding: 16px;
+              resize: none; }
+        .page-template-home .container section.contact-form .form .form-container .gform_footer {
+          padding: 16px 8px; }
+          .page-template-home .container section.contact-form .form .form-container .gform_footer input[type="submit"] {
+            font-family: 'Helvetica Neue LT W01_33 Th Ex';
+            color: white;
+            background-color: #333;
+            padding: 16px;
+            border: none;
+            cursor: pointer;
+            transition: 0.2s; }
+            .page-template-home .container section.contact-form .form .form-container .gform_footer input[type="submit"]:hover {
+              background-color: #EB6A33; }

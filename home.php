@@ -25,4 +25,19 @@ get_header(); ?>
 		$hpiPod->findRecords('name', -1); 
 		echo $hpiPod->showTemplate('Home Page Items Template');
 	?>
+		<section class="contact-form">
+			<div class="title">
+				<h1>give us a <span class="orange">hoot</span></h1>
+			</div>
+			<div class="form">
+				<div class="form-container">
+					<?php 
+						gravity_form( 1, false, false, false, '', true );
+					?>
+				</div>
+			</div>
+		</section>
 </div>
+
+
+<?php get_footer(); ?>

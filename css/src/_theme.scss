@@ -105,8 +105,59 @@ nav {
 	}
 }
 
+footer {
+	background-color: $footer-darkgrey;
+	.footer {
+		width: $containerwidth;
+		@extend %flex;
+		margin: 0 auto;
+		padding: 25px 7% 40px 7%;
+		>div {
+			flex-basis: 50%;
+			p {
+				color: $lightgrey;
+				font-size: 19px;
+				line-height: 28px;
+				letter-spacing: 1.4px;
+			}
+		}
+		>div {
+			@extend %flex;
+			flex-direction: column;
+		}
+		.contact {
+			justify-content: flex-start;
+			.orange {
+				color: $orange;
+			}
+			.copyright {
+				padding-top: 28px;
+			}
+		}
+		.social {
+			justify-content: space-between;
+			align-items: flex-end;
+			.icons {
+				@extend %flex;
+				a {
+					@extend %flex;
+					justify-content: center;
+					align-items: center;
+					background-color: $grey;
+					margin-left: 10px;
+					height: 45px;
+					width: 45px;
+					i {
+						font-size: 36px;
+					}
+				}
+			}
+		}
+	}
+}
+
 .container {
-	position: absolute;
+	position: relative;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -299,6 +350,77 @@ nav {
 								transition: 0.2s;
 								&:hover {
 									color: $charcoal;
+								}
+							}
+						}
+					}
+				}
+			}
+			&.contact-form {
+				background-color: $grey;
+				border-bottom: 0;
+				h1 {
+					color: $darkgrey;
+					text-align: center;
+					font-size: 45px;
+					line-height: 80px;
+					text-transform: uppercase;
+					letter-spacing: 20px;
+					margin-bottom: 10px;
+					.orange {
+						color: $orange;
+					}
+				}
+				.form {
+					width: $containerwidth;
+					margin: 0 auto;
+					padding: 20px 0 50px 0;
+					.form-container {
+						background-color: white;
+						padding: 26px 4%;
+						ul {
+							@extend %flex;
+							flex-wrap: wrap;
+							>li {
+								padding: 20px 8px;
+								margin: 0;
+								.ginput_container {
+									width: 100%;
+									margin: 0;
+								}
+							}
+							.half {
+								flex-basis: calc(50% - 16px);
+								input[type="text"] {
+									font-family: 'Helvetica Neue LT W01_33 Th Ex';
+									width: 100%;
+									border: 1px solid $grey;
+									padding: 16px;
+								}
+							}
+							.full {
+								flex-basis: calc(100% - 32px);
+								textarea {
+									font-family: 'Helvetica Neue LT W01_33 Th Ex';
+									width: 100%;
+									border: 1px solid $grey;
+									padding: 16px;
+									resize: none;
+								}
+							}
+						}
+						.gform_footer {
+							padding: 16px 8px;
+							input[type="submit"] {
+								font-family: 'Helvetica Neue LT W01_33 Th Ex';
+								color: white;
+								background-color: $darkgrey2;
+								padding: 16px;
+								border: none;
+								cursor: pointer;
+								transition: 0.2s;
+								&:hover {
+									background-color: $orange;
 								}
 							}
 						}
